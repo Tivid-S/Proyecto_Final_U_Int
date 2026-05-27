@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* ============================================================
-  login.css — Estilos exclusivos de login.html · Maestro Sastrería
-   ============================================================ */
 /* ---------- Layout principal ---------- */
 .login-page {
   display: flex;
@@ -9,7 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   padding: 24px;
-  background: #111009;
+  background: #111009; /* $darker-bg */ /* $darker-bg */
 }
 
 .login-wrapper {
@@ -17,67 +14,63 @@
   width: 100%;
   max-width: 860px;
   min-height: 560px;
-  border-radius: 8px;
+  border-radius: 8px; /* $radius-lg */
   overflow: hidden;
-  border: 0.5px solid #3a2e1e;
+  border: 0.5px solid #3a2e1e; /* $border */
 }
 
 /* ---------- Panel izquierdo ---------- */
 .login-left {
   width: 38%;
-  background: #111009;
+  background: #111009; /* $darker-bg */ /* $darker-bg */
   padding: 52px 36px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  border-right: 0.5px solid #3a2e1e;
+  border-right: 0.5px solid #3a2e1e; /* $border */
   background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(180, 140, 60, 0.03) 20px, rgba(180, 140, 60, 0.03) 21px);
 }
 
-/* Ornamento dorado superior */
 .brand-ornament {
   font-size: 18px;
-  color: #b48c3c;
+  color: #b48c3c; /* $gold */ /* $gold */
   letter-spacing: 8px;
   margin-bottom: 20px;
 }
 
-/* Nombre de la marca */
 .brand-name {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif; /* $font-display */
   font-size: 38px;
   font-weight: 300;
-  color: #f0e6d0;
+  color: #f0e6d0; /* $text-main */ /* $text-main */
   line-height: 1.05;
   letter-spacing: 2px;
 }
 
 .brand-sub {
   display: block;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans-serif; /* $font-body */
   font-size: 11px;
   font-weight: 300;
   letter-spacing: 5px;
-  color: #b48c3c;
+  color: #b48c3c; /* $gold */ /* $gold */
   margin-top: 8px;
   text-transform: uppercase;
 }
 
-/* Línea decorativa central */
 .login-divider-line {
   width: 100%;
   height: 0.5px;
-  background: #3a2e1e;
+  background: #3a2e1e; /* $border */ /* $border */
 }
 
-/* Cita */
 .brand-tagline {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif; /* $font-display */
   font-style: italic;
   font-size: 17px;
   font-weight: 300;
-  color: #7a6a50;
+  color: #7a6a50; /* $gold-dim */ /* $text-muted */
   line-height: 1.8;
   border: none;
 }
@@ -85,7 +78,7 @@
 /* ---------- Panel derecho ---------- */
 .login-right {
   flex: 1;
-  background: #1a1410;
+  background: #1a1410; /* $dark-bg */ /* $dark-bg */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,12 +90,11 @@
   max-width: 360px;
 }
 
-/* Encabezado del formulario */
 .login-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif; /* $font-display */
   font-size: 30px;
   font-weight: 300;
-  color: #f0e6d0;
+  color: #f0e6d0; /* $text-main */ /* $text-main */
   letter-spacing: 1.5px;
   margin-bottom: 6px;
 }
@@ -110,12 +102,12 @@
 .login-subtitle {
   font-size: 13px;
   font-weight: 300;
-  color: #7a6a50;
+  color: #7a6a50; /* $gold-dim */ /* $text-muted */
   letter-spacing: 0.5px;
   margin-bottom: 36px;
 }
 
-/* ---------- Campos del formulario ---------- */
+/* ---------- Campos ---------- */
 .login-form {
   display: flex;
   flex-direction: column;
@@ -132,7 +124,7 @@
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #b48c3c;
+  color: #b48c3c; /* $gold */ /* $gold */
   margin-bottom: 8px;
 }
 
@@ -142,56 +134,54 @@
 
 .field-input {
   width: 100%;
-  background: #111009;
-  border: 0.5px solid #3a2e1e;
-  border-radius: 2px;
+  background: #111009; /* $darker-bg */ /* $darker-bg */
+  border: 0.5px solid #3a2e1e; /* $border */
+  border-radius: 2px; /* $radius-sm */
   padding: 12px 40px 12px 14px;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans-serif; /* $font-body */
   font-size: 14px;
   font-weight: 300;
-  color: #f0e6d0;
+  color: #f0e6d0; /* $text-main */ /* $text-main */
   letter-spacing: 0.5px;
   outline: none;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease; /* $transition */
 }
 
 .field-input::placeholder {
-  color: #4a3e2c;
+  color: #4a3e2c; /* $text-dim */ /* $text-dim */
 }
 
 .field-input:focus {
-  border-color: #b48c3c;
+  border-color: #b48c3c; /* $gold */ /* $gold */
 }
 
-/* Icono dentro del input */
 .field-icon {
   position: absolute;
   right: 13px;
   top: 50%;
   transform: translateY(-50%);
-  color: #4a3e2c;
+  color: #4a3e2c; /* $text-dim */ /* $text-dim */
   display: flex;
   align-items: center;
   pointer-events: none;
 }
 
-/* Botón toggle contraseña */
 .field-toggle {
   pointer-events: all;
   background: transparent;
   border: none;
   padding: 0;
-  color: #4a3e2c;
-  transition: color 0.2s ease;
+  color: #4a3e2c; /* $text-dim */ /* $text-dim */
+  transition: color 0.2s ease; /* $transition */
   display: flex;
   align-items: center;
 }
 
 .field-toggle:hover {
-  color: #b48c3c;
+  color: #b48c3c; /* $gold */ /* $gold */
 }
 
-/* ---------- Fila recordar / olvidé ---------- */
+/* ---------- Recordar / Olvidé ---------- */
 .field-row {
   display: flex;
   justify-content: space-between;
@@ -207,7 +197,7 @@
 }
 
 .remember-check {
-  accent-color: #b48c3c;
+  accent-color: #b48c3c; /* $gold */ /* $gold */
   width: 13px;
   height: 13px;
   cursor: pointer;
@@ -216,41 +206,41 @@
 .remember-text {
   font-size: 12px;
   font-weight: 300;
-  color: #7a6a50;
+  color: #7a6a50; /* $gold-dim */ /* $text-muted */
 }
 
 .forgot-link {
   font-size: 12px;
   font-weight: 300;
-  color: #b48c3c;
+  color: #b48c3c; /* $gold */ /* $gold */
   letter-spacing: 0.3px;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease; /* $transition */
 }
 
 .forgot-link:hover {
-  color: #d4ae6a;
+  color: #d4ae6a; /* $gold-light */ /* $gold-light */
 }
 
 /* ---------- Botones ---------- */
 .btn-primary {
   width: 100%;
-  background: #b48c3c;
-  color: #111009;
+  background: #b48c3c; /* $gold */ /* $gold */
+  color: #111009; /* $darker-bg */ /* $darker-bg */
   border: none;
-  border-radius: 2px;
+  border-radius: 2px; /* $radius-sm */
   padding: 14px;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans-serif; /* $font-body */
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 4px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.2s ease, letter-spacing 0.2s ease;
+  transition: background 0.2s ease, letter-spacing 0.2s ease; /* $transition */
   margin-bottom: 20px;
 }
 
 .btn-primary:hover {
-  background: #d4ae6a;
+  background: #d4ae6a; /* $gold-light */ /* $gold-light */
   letter-spacing: 5px;
 }
 
@@ -258,7 +248,6 @@
   transform: scale(0.99);
 }
 
-/* Divisor */
 .form-divider {
   display: flex;
   align-items: center;
@@ -269,54 +258,52 @@
 .divider-line {
   flex: 1;
   height: 0.5px;
-  background: #3a2e1e;
+  background: #3a2e1e; /* $border */ /* $border */
 }
 
 .divider-label {
   font-size: 11px;
-  color: #4a3e2c;
+  color: #4a3e2c; /* $text-dim */ /* $text-dim */
   letter-spacing: 2px;
 }
 
-/* Botón secundario */
 .btn-secondary {
   display: block;
   width: 100%;
   text-align: center;
   background: transparent;
-  color: #b48c3c;
-  border: 0.5px solid #3a2e1e;
-  border-radius: 2px;
+  color: #b48c3c; /* $gold */ /* $gold */
+  border: 0.5px solid #3a2e1e; /* $border */
+  border-radius: 2px; /* $radius-sm */
   padding: 13px;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans-serif; /* $font-body */
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 4px;
   text-transform: uppercase;
-  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; /* $transition */
 }
 
 .btn-secondary:hover {
-  border-color: #b48c3c;
+  border-color: #b48c3c; /* $gold */ /* $gold */
   background: rgba(180, 140, 60, 0.06);
 }
 
-/* Enlace volver al inicio */
 .login-footer-note {
   margin-top: 28px;
   text-align: center;
   font-size: 12px;
-  color: #4a3e2c;
+  color: #4a3e2c; /* $text-dim */ /* $text-dim */
 }
 
 .login-footer-note a {
-  color: #7a6a50;
+  color: #7a6a50; /* $gold-dim */ /* $text-muted */
   letter-spacing: 0.5px;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease; /* $transition */
 }
 
 .login-footer-note a:hover {
-  color: #b48c3c;
+  color: #b48c3c; /* $gold */ /* $gold */
 }
 
 /* ---------- Responsive ---------- */
@@ -337,7 +324,7 @@
     align-items: center;
     justify-content: space-between;
     border-right: none;
-    border-bottom: 0.5px solid #3a2e1e;
+    border-bottom: 0.5px solid #3a2e1e; /* $border */
     min-height: auto;
   }
   .login-divider-line,
