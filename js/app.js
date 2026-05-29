@@ -28,7 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (form) {
     form.addEventListener('submit', (e) => {
+<<<<<<< HEAD
       
+=======
+      e.preventDefault();
+
+>>>>>>> d0896e24d685449a82b66083ae63c16e4cdfe947
       let valid = true;
 
       [usernameInput, emailInput, passwordInput].forEach(input => {

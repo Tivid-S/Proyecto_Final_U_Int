@@ -134,6 +134,7 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  gap: 80px;
 }
 
 .busqueda-input-wrap {
@@ -159,6 +160,7 @@
   border: 0.5px solid #3a2e1e;
   border-radius: 2px;
   padding: 12px 14px 12px 40px;
+  padding: 12px 0px 12px 40px;
   font-family: 'Jost', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -595,6 +597,28 @@
     align-items: stretch;
   }
 
+
+    
+
+  }
+
+  .busqueda-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px;
+    gap: 20px;
+
+    .busqueda-input{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+  
+  }
+
+
+
   .busqueda-btn {
     width: 100%;
   }
@@ -616,4 +640,3 @@
   .resultados-grid {
     grid-template-columns: 1fr;
   }
-}
